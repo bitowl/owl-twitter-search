@@ -1,0 +1,14 @@
+<link rel="import" href="../../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../../bower_components/paper-input/paper-input.html">
+<dom-module id="owl-search-term">
+	<template>
+		<style>
+			:host {
+			}
+        </style>
+        <paper-input value="{{searchTerm}}" label="search term"></paper-input>
+        <paper-button on-tap="update" raised>Update</paper-button>
+	</template>
+
+	<script src="owl-search-term.js"></script>
+</dom-module>

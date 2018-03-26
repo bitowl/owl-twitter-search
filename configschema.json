@@ -1,0 +1,32 @@
+{
+    "type": "object",
+    "properties": {
+        "messagesCount": {
+            "type": "number",
+            "default": 10,
+            "description": "The number of messages stored"
+		},
+		"consumerKey": {
+			"type": "string",
+			"description": "Twitter consumer key"
+		},
+		"consumerSecret": {
+			"type": "string",
+			"description": "Twitter consumer secret"
+		},
+		"token": {
+			"type": "string",
+			"description": "Twitter access token"
+		},
+		"tokenSecret": {
+			"type": "string",
+			"description": "Twitter access token secret"
+		}
+    },
+    "required": [
+		"consumerKey",
+		"consumerSecret",
+		"token",
+		"tokenSecret"
+    ]
+}

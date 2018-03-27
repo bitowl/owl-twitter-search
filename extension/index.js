@@ -6,7 +6,7 @@ module.exports = function (nodecg) {
         defaultValue: []
     });
     const searchTerm = nodecg.Replicant('search-term', {
-        defaultValue: ""
+        defaultValue: ''
     });
 
     var t = new Twitter({
@@ -32,13 +32,12 @@ module.exports = function (nodecg) {
 
     searchTerm.on('change', newVal => {
         if (newVal === '') {
+            nodecg.log.info('Not searching for tweets');
             return;
         }
-        nodecg.log.info('Searching for ' + newVal);
+        nodecg.log.info('Searching for tweets containing ' + newVal);
         t.track(newVal);
     });
-  
-    // t.track('#OWL2018');
 
     function convertTweetToQuestion(tweet) {
         var question = {};

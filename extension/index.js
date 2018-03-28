@@ -31,6 +31,8 @@ module.exports = function (nodecg) {
     });
 
     searchTerm.on('change', newVal => {
+        t.untrackAll();
+
         if (newVal === '') {
             nodecg.log.info('Not searching for tweets');
             return;

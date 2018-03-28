@@ -51,6 +51,6 @@
   "license": "MIT",
   "dependencies": {
     "node-tweet-stream": "^2.0.3",
-    "tweet.md": "^2.1.0"
+    "tweet.md": "bitowl/tweet.md#ea8551aefaf1"
   }
 }

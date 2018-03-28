@@ -5,9 +5,18 @@
 		<style>
 			:host {
 			}
-        </style>
-        <paper-input value="{{searchTerm}}" label="search term"></paper-input>
-        <paper-button on-tap="update" raised>Update</paper-button>
+			.container {
+				display: flex;
+				align-items: center;
+			}
+			.searchterm {
+				flex-grow: 1;
+			}
+		</style>
+		<div class="container">
+        	<paper-input value="{{searchTerm}}" label="search term" class="searchterm"></paper-input>
+			<paper-button on-tap="update" raised>Update</paper-button>
+		</div>
 	</template>
 
 	<script src="owl-search-term.js"></script>

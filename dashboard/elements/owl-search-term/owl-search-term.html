@@ -1,8 +1,9 @@
 <link rel="import" href="../../../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="/bundles/owl-nodecg-styles/dashboard/css/bitowl-theme.html">
 <dom-module id="owl-search-term">
 	<template>
-		<style>
+		<style include="bitowl-theme">
 			:host {
 			}
 			.container {
@@ -14,8 +15,8 @@
 			}
 		</style>
 		<div class="container">
-        	<paper-input value="{{searchTerm}}" label="search term" class="searchterm"></paper-input>
-			<paper-button on-tap="update" raised>Update</paper-button>
+        	<paper-input value="{{searchTerm}}" label="search term" always-float-label class="searchterm"></paper-input>
+			<paper-button on-tap="update" class="nodecg-configure">Update</paper-button>
 		</div>
 	</template>
 
